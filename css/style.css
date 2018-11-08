@@ -9,83 +9,75 @@ body {
     box-sizing: border-box;
 }
 
-img{
-  width: 100%;
-  height: 300px;
-  padding-top: 3%;
+.container{
+  margin: 0 auto;
 }
 
 .preview{
-  position: relative;
+  height: 300px;
+  margin: 2em 0;
+  width: 100%;
+  background-size: cover;
+  background-position: left;
 }
 
 h2{
-  font-family: serif;
-  font-size: 130%;
-  position: absolute;
-    top: 12%;
-    left: 6%;
+  font-size: 2.4em;
+  padding: 10%;
+  text-align: left;
 }
 
 h1{
+    margin: 30px 0;
+    font-family: sans-serif;
+    font-size: 1.4em;
+    letter-spacing: .2em;
     text-align: center;
-    padding: 5%;
-    font-family: serif;
     text-transform: uppercase;
-    letter-spacing: .1em;
-    font-weight: 600;
-    color: #383838;
 }
 
-.title{
-    padding-top: 9%;
+.baku{
+  background-image: url(../images/baku.jpg);
 }
 
-img{
-    margin: 1%;
-    width: 48%;
-    float: top;
+.london{
+  background-image: url(../images/london.png);
 }
 
-.site-header{
-  padding: 40px;
-  text-align: center;
+.madrid{
+  background-image: url(../images/madrid.jpg);
 }
 
-@media screen and (min-width: 575px){
-   img {
-    margin: 1%;
-    width: 48%;
-    float: left;
+.rome{
+  background-image: url(../images/rome.jpg);
+}
+
+@media (min-width: 600px) {
+  .container{
+    width: 80%;
+    margin: 0 auto;
   }
 
-  h2{
 
-  }
-}
-
-@media screen and (min-width: 991px) {
-  img{
-    margin: 1%;
+  .preview{
+    float: right;
     height: 200px;
-    width: 23%;
-    float: left;
+    margin: 1% 1%;
+    width: 48%;
   }
 
-  h1{
-    font-size: 1.5em;
+  .container{
+    width: 80%
   }
+@media (min-width: 900px) {
+  .container{
+    width: 70%;
   }
 
-.container{
-  margin: auto;
+.preview{
+  background-size: cover;
+  float: left;
+  height: 200px;
+  margin: 2em 1%;
+  width: 23%;
 }
-
-
-@media screen and (min-width: 1200px) {
-  img {
-   margin: 1%;
-   width: 48%;
-   float: left;
-   max-width: 1170px;
-  }
